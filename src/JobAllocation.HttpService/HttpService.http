@@ -1,0 +1,6 @@
+@JobAllocation.HttpService_HostAddress = https://localhost:5058
+
+POST {{JobAllocation.HttpService_HostAddress}}/define-allocation/
+Accept: application/json
+
+###

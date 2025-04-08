@@ -6,7 +6,7 @@ using MongoDB.Bson.Serialization.Serializers;
 
 namespace JobAllocation.JobAllocationContext.Infrastructure;
 
-public class GenericPoliticaSerializer : SerializerBase<IPolicy>, IBsonDocumentSerializer
+public class GenericPolicySerializer : SerializerBase<IPolicy>, IBsonDocumentSerializer
 {
     public override void Serialize(BsonSerializationContext context, BsonSerializationArgs args, IPolicy value)
     {

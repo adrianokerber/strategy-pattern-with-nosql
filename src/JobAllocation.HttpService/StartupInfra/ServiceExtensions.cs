@@ -99,7 +99,7 @@ internal static class ServicesExtensions
         var conventionPack = new ConventionPack { new CamelCaseElementNameConvention() };
         ConventionRegistry.Register("camelCase", conventionPack, t => true);
 
-        BsonSerializer.RegisterSerializer(typeof(IPolicy), new GenericPoliticaSerializer());
+        BsonSerializer.RegisterSerializer(typeof(IPolicy), new GenericPolicySerializer());
 
         BsonClassMap.RegisterClassMap<Company>(cm =>
         {
